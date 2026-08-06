@@ -142,8 +142,8 @@ export const projects: Project[] = [
 
 export const education: EducationItem[] = [
   {
-    school: "New York University",
-    degree: "M.S. in Information Systems"
+    school: "New York University, Courant Institute",
+    degree: "M.S. in Computer Science"
   },
   {
     school: "London School of Economics",
