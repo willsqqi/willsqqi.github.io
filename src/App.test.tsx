@@ -21,13 +21,14 @@ describe("Portfolio content", () => {
     render(<App />);
 
     const education = screen.getByLabelText("Education");
-    expect(within(education).getByText("New York University, Courant Institute")).toBeInTheDocument();
+    expect(within(education).getByText("New York University")).toBeInTheDocument();
     expect(within(education).getByText("M.S. in Computer Science")).toBeInTheDocument();
     expect(within(education).queryByText("M.S. in Information Systems")).not.toBeInTheDocument();
     expect(within(education).getByText("London School of Economics")).toBeInTheDocument();
     expect(within(education).getByText("Chinese University of Hong Kong")).toBeInTheDocument();
 
     const educationText = education.textContent ?? "";
+    expect(educationText).not.toMatch(/Courant Institute/i);
     expect(educationText).not.toMatch(/\b20\d{2}\b/);
     expect(educationText).not.toMatch(/Jan|Sep|Nov|Dec|Aug/i);
     expect(educationText).not.toMatch(/Distinction|First Class Honours/i);

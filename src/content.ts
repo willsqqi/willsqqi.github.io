@@ -142,7 +142,7 @@ export const projects: Project[] = [
 
 export const education: EducationItem[] = [
   {
-    school: "New York University, Courant Institute",
+    school: "New York University",
     degree: "M.S. in Computer Science"
   },
   {
