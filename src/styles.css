@@ -441,6 +441,10 @@ p {
   padding: 1.25rem;
 }
 
+.education-item h3 {
+  min-height: 2.56em;
+}
+
 .education-item p {
   margin-bottom: 0;
 }
@@ -502,6 +506,10 @@ p {
 
   .contact-actions {
     justify-content: flex-start;
+  }
+
+  .education-item h3 {
+    min-height: auto;
   }
 }
 
